@@ -1,23 +1,284 @@
 import { Head } from 'mdx-deck'
+import { Split } from 'mdx-deck/layouts'
 
 export { default as theme } from './theme'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Beginner CSS</title>
 </Head>
 
 # Hello
 
+Go here to get started: <http://bit.ly/css-starter>
+
+Follow along: <https://alexanderson1993.github.io/presentation-beginner-css>
 ---
 
-## Edit this file
+## Hi there! 👋
 
-To create your presentation
+<img src={require("file-loader!./images/me.jpg")} alt="This is me" />
 
-```notes
-- Create speaker notes in fenced code blocks
+---
+
+# What to Expect
+
+
+Learn about Styling the Web
+
+You teach yourself
+
+Lots of interaction - <http://bit.ly/css-starter>
+
+---
+
+<div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+
+# What NOT to Expect
+
+<img src={require("file-loader!./images/information.gif")} style={{width: '100%'}}/>
+</div>
+
+---
+
+# Let's get Started!
+
+<img src={require("file-loader!./images/internet.gif")} style={{width: '75%'}}/>
+
+<http://bit.ly/css-starter>
+
+---
+export default Split
+
+# Making Websites
+
+<img src={require("file-loader!./images/css.gif")} style={{textAlign: 'center',width: '100%'}} />
+
+---
+# What is CSS?
+
+Styles
+
+<https://csszengarden.com>
+
+*Alex, Make sure you show the index.html file first!*
+
+---
+
+# CSS
+
+Selectors - What HTML element(s) get the style 
+
+#### (eg. div, #header, .button-large)
+
+Properties - What style changes are added to the element 
+
+#### (eg. color, font-size, width)
+
+Values - Applied to properties to affect the style 
+
+#### (eg. blue, 10px, hidden)
+---
+# Selectors
+
+## Tag Selector
+
+`<p></p>` - `p {}`
+
+`<span></span>` - `span {}`
+
+`<div></div>` - `div {}`
+
+* Can easily style too much 
+---
+# Selectors
+
+## ID Selector: `#`
+
+`<p id="never"></p>` - `#never {}`
+
+`<span id="going"></span>` - `#going {}`
+
+`<div id="to"></div>` - `#to {}`
+
+* Only one ID per element
+* Only allowed to use ID once per HTML page
+
+---
+# Selectors
+
+## Class Selector: `.`
+
+`<p class="give you up"></p>` - `.give {} .you {} .up {}`
+
+`<span class="never going to"></span>` - `.never, .going, .to {}`
+
+`<div class="let you down"></div>` - `.let, .you, .down {}`
+
+* Best general-use selector 
+* Multiple classes on a Tag
+* Multiple uses of classes on an HTML page
+
+---
+# Selectors
+
+## Grouped Selectors
+
+`p, span, div {}`
+
+`h1, h2, h3, h4, h5, h6 {}`
+
+---
+
+export default Split
+
+# Properties
+
+```
+accelerator
+azimuth
+background
+background-attachment
+background-color
+background-image
+background-position
+background-position-x
+background-position-y
+background-repeat
+behavior
+```
+---
+export default Split
+
+# Properties
+
+```
+border
+border-bottom
+border-bottom-color
+border-bottom-style
+border-bottom-width
+border-collapse
+border-color
+border-left
+border-left-color
+border-left-style
+border-left-width
+border-right
+border-right-color
+border-right-style
+border-right-width
+border-spacing
+border-style
+border-top
+border-top-color
+border-top-style
+border-top-width
+border-width
+```
+---
+# Properties
+```
+bottom
+caption-side
+clear
+clip
+color
+content
+counter-increment
+counter-reset
+cue
+cue-after
+cue-before
+cursor
+direction
+display
+elevation
+empty-cells
+filter
+float
+```
+---
+
+# Properties
+
+# 🤷‍♂️
+
+I got bored of writing them all out.
+
+---
+
+# Properties
+
+```
+color: red;
+font-size: 40px;
+border-bottom: solid 4px white;
+padding-top: 40px;
 ```
 
+<div style={{color:'red', fontSize: '40px', borderBottom: 'solid 4px white', paddingTop: "40px"}}>O hai!</div>
+---
+# The Box Model
+
+<iframe src="http://guyroutledge.github.io/box-model/" style={{width: '80vw', height:'80vh', backgroundColor: 'white'}}/>
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+# Applying Styles
+
+`<p style="color:red; border: solid 1px black">Hello</p>`
+
+`<style>p {color: green}</style>`
+
+`<link rel="stylesheet" type="text/css" href="style.css">`
+
+---
+# Let's Do It!
+
+<http://bit.ly/css-starter>
+
+---
+
+export default Split
+
+# Let's Learn More
+
+
+[Video Tutorial](https://www.youtube.com/watch?v=GSweALMbO0k&list=PL41lfR-6DnOq3BebucTNMSVDojCIiv_en&index=12)
+
+*Same as last time, but starting with CSS*
+
+[Interneting Is Hard](https://internetingishard.com)
+
+*Same as last time, but do the CSS Stuff*
+
+[Webdev Guild](https://webdev-guild.github.io/apprentice/css.html)
+
+[Hardcore Projects](https://medium.com/@GarrettLevine/5-projects-to-complete-when-starting-to-learn-front-end-web-development-48e8a1ce3178)
+
+---
+export default Split
+
+# Let's Build Something
+
+Portfolio/Resume Website
+
+Recipe Book
+
+Fandom Explosion
+
+Bookmarks Homepage
+
+Birthday Card Website
+
+---
+
+## Thanks 🙌
+
+
+<https://ralexanderson.com>
+
+<https://github.com/alexanderson1993>
+
+<https://twitter.com/ralex1993>
+
+<https://alexanderson1993.github.io/presentation-beginner-css/>
